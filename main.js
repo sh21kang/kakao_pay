@@ -25,9 +25,9 @@ app.get('/kakaopay_process',(req,res) =>{
         "total_amount":"2200" ,
         "vat_amount":"200" ,
         "tax_free_amount":"0" ,
-        "approval_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com/help" ,
-        "fail_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com/help" ,
-        "cancel_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com/help  "
+        "approval_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help" ,
+        "fail_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help" ,
+        "cancel_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help  "
         // "approval_url":"http://localhost:3000/help" ,
         // "fail_url":"http://localhost:3000/help" ,
         // "cancel_url":"http://localhost:3000/help"
