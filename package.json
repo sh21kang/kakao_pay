@@ -1,0 +1,27 @@
+{
+    "name": "kakaopay-practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "scripts": {
+        "start": "pm2 start main.js --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shwjdgh34/kakaopay.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/web-n/Nodejs/issues"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "request": "^2.88.0",
+        "sanitize-html": "^1.18.2"
+    }
+}
