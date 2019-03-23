@@ -24,12 +24,12 @@ app.get('/kakaopay_process_web',(req,res) =>{
         "total_amount":"2200" ,
         "vat_amount":"200" ,
         "tax_free_amount":"0" ,
-        "approval_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help" ,
-        "fail_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help" ,
-        "cancel_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/help  "
-        // "approval_url":"http://localhost:3000/help" ,
-        // "fail_url":"http://localhost:3000/help" ,
-        // "cancel_url":"http://localhost:3000/help"
+        // "approval_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/payment/result" ,
+        // "fail_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/payment/result" ,
+        // "cancel_url":"http://www.xn--en1bo2f3ybe01a6jg9xi.com:3000/payment/result  "
+        "approval_url":"http://localhost:3000/payment/result" ,
+        "fail_url":"http://localhost:3000/payment/result" ,
+        "cancel_url":"http://localhost:3000/payment/result"
     };
     request.post({
         headers: {'content-type' : 'application/x-www-form-urlencoded',
@@ -79,7 +79,7 @@ app.get('/kakaopay_process_mobile',(req,res) =>{
     });
 })
 
-app.get('/help', (req, res) => {
+app.get('/payment/result', (req, res) => {
      let cookies = {};
      console.log(req.headers);
      if(req.headers.cookie !== undefined ) {
